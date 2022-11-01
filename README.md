@@ -218,12 +218,24 @@ Table of Contents
     - In windows, there are two types of users: 
       - Admin : root user
       - Gust : normal user 
-  - Linux
+  - **Linux**
     - In Linux, there is no drive letter concepts. In linux, directory ( ~ folders) hierarchy.
     - forward slash / is the top level directory 
   - Top Level directory / 
+  - /root /home /boot /etc /bin /sbin /usr /opt 
     - /root - root user 
     - /home - normal user
+    - /boot - If there is an expected shutdown, 
+      - To travel from Mamo to Cophenhagen, you need to use transport methods e.g. car, bike, train
+      - Travel from Mamo to Cophenhagen without transport vehicles (bootable files), you will not be able to reach the destination (OS)
+      - grub2 -> RHEL 7.0, 8.0 is the boot loader, depending on version, it will change.
+        - ground unified boot loader version 2
+        - LILO - Linux loader 
+    - /etc contains configuration files
+    - /bin contains normal user executable commands
+    - /sbin contains root user executable commands (super user)
+    - /usr - program files - install packges in this directory 
+    - /op - is optional for usr , third parties software e.g. Ansible 
   - **Three Types of files**
     - Regular file
       - It contains data
@@ -279,6 +291,7 @@ Table of Contents
     - [Files permission reading](https://devconnected.com/linux-file-permissions-complete-guide/)
   - Finished session - 11
   - If you cannot push the repo from terminal, Ubuntu, read this [thread](https://stackoverflow.com/questions/71495330/can-not-push-on-github-through-ubuntu-terminal)
+  - [Quickly set up GitHub SSH example](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Key-Setup-Config-Ubuntu-Linux)
 
 ---
 
