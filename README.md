@@ -206,7 +206,25 @@ Table of Contents
     - GUI 
     
 - **Linux File System Theory**
-  - Three Types of files
+  - Window 
+    - DVD or Drive iso.image
+    - iso.img
+    - PC
+    - Reboot OS-> BIOS -> F1 to F12, DEL, ESC 
+      - First Boot -> Pen drive , F10 -> Save changes then reboot
+    - A - Z drives letter concept for window
+      - A and B are reserved for floppy disk..
+      - C is reserved for Hard disk
+    - In windows, there are two types of users: 
+      - Admin : root user
+      - Gust : normal user 
+  - Linux
+    - In Linux, there is no drive letter concepts. In linux, directory ( ~ folders) hierarchy.
+    - forward slash / is the top level directory 
+  - Top Level directory / 
+    - /root - root user 
+    - /home - normal user
+  - **Three Types of files**
     - Regular file
       - It contains data
         - can be text e.g. Notepad, pdf, word files 
@@ -260,6 +278,8 @@ Table of Contents
     - <img src="https://www.2daygeek.com/wp-content/uploads/2019/01/find-identify-file-types-in-linux-4.png">
     - [Files permission reading](https://devconnected.com/linux-file-permissions-complete-guide/)
   - Finished session - 11
+  - If you cannot push the repo from terminal, Ubuntu, read this [thread](https://stackoverflow.com/questions/71495330/can-not-push-on-github-through-ubuntu-terminal)
+
 ---
 
 <details>
