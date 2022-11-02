@@ -62,11 +62,13 @@ Table of Contents
   - Apps, data & files
   - It supports networking
   - Server OS e.g. Unix, Linux, Win-7,8,10,11
-  - History of Microsoft Disk Operating System
-    - First OS in the market
+  - History of Microsoft Disk Operating System (MSDOS)
+    - First OS in the market, Free
     - CUI, it does not support networking
-    - Standalone OS
+    - Drawbacks => Standalone OS, no multiuser, multitask environment
+    - CLI
     - Was developed in Assembly language
+  - MS Window (GUI)
   - History of Unix
     - Developed in year 1973
     - It is CUI
@@ -92,7 +94,8 @@ Table of Contents
     - win2000, win2003, winXP till 2015, many companies use this winXP
     - win7, win8, wi10, win11
     - win-12- with linux kernel
-
+  - Unix and Linux belong to Unix-like family 
+    - 
 </details>
 
 ---
@@ -194,7 +197,22 @@ Table of Contents
     - Secure OS
       - Virus
       - Hacking
-      -  
+      - In windows, there are two types: Client and Server.
+        - Win 2008 R2 core - TUI text user interface model 
+        - .exe e.g. To watch window, VLC media player download from internet is required. It could be affected by virus easily.
+        - Therefore, you need to install Anti-virus for both clients and servers. 
+      - Linux server is secure
+        - In Linux, .rpm -> redhat package manager. .rpm won't be affected by virus. Therefore, no need to install any third party applications.
+        - compared to window, subscriptions (centos, Rocky) are much cheaper. RHEL -> subscription
+        - centos no support for production env, there for free
+        - RHEL has support for prod env
+      - Linux Family Types
+        - Debian- Ubuntu, Debian
+        - Red Head -  CentOS, Fedora, Rocky, etc.
+      - Types of OS
+        - SIngle User - Single Tasking -> MSDOS, super user 
+        - Single User - Multi tasking -> MSWin
+        - Multi User - Multi tasking -> Unix, Linux 
     - Shell scripting
       - Data processing
       - Automation of Admin activities (linux, hadoop, dba, aws, devops)
@@ -284,7 +302,7 @@ Table of Contents
           - Device Drivers - interacts with Hardware components
           - Libraries - communicates with Applications
             - keyboard driver, libraries -> scanf -> printf goes to output library -> output function -> output device driver -> screen 
-    - Hardware
+    - Hardware - Linux can be installed into any hardware components, unlike unix.
   - [filetypes](https://www.geeksforgeeks.org/how-to-find-out-file-types-in-linux/)
     - <img src="./img/filetypes.png">
     - <img src="https://www.2daygeek.com/wp-content/uploads/2019/01/find-identify-file-types-in-linux-4.png">
@@ -292,11 +310,73 @@ Table of Contents
   - Finished session - 11
   - If you cannot push the repo from terminal, Ubuntu, read this [thread](https://stackoverflow.com/questions/71495330/can-not-push-on-github-through-ubuntu-terminal)
   - [Quickly set up GitHub SSH example](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Key-Setup-Config-Ubuntu-Linux)
+  - Architecture 
+    - Hardware : Processor (ALU - arthimcal logical unit )
+    - Kernel : Device info, multi tasking info, file system info - they are all managed by Kernel 
+      - Mono -> Linux like machine has this, `uname -a or -r`. This command can be used in both linux and window to find out the kernel version.
+      - Micro -> Window like machine has micro kernel
+    - RHEL (Bash) Shell -> SH, KSH, CSH
+    - Kernel will provide the result from ALU to the monitor .
+
 
 ---
 
 <details>
   <summary>Day 6</summary>
+
+- Virtualisation 
+  - Gmail account creation 
+  - Use browser -> click sign up option (gmail web app)-> Form -> Details got stored in gmail db 
+    - www.gmail.com (DNS services it will resolve host name)
+    - Install different servers on different machines
+      - Web     DB      DNSserver   DHCP
+    - <img src="https://www.researchgate.net/publication/323918941/figure/fig1/AS:606727292608512@1521666467730/Virtual-vs-Traditional-Architecture-There-are-different-types-of-hypervisor-which-provide.png">
+    - <img src="https://cloudacademy.com/wp-content/uploads/2014/12/vmware-1.png">
+  - Window -> Hyper-V
+  - Linux -> KVM
+  - Oracle -> Virtual Box
+  - VMware -> Workstation 16 Pro
+- Virtualisation vs Containerisation
+  - <img src="https://s7280.pcdn.co/wp-content/uploads/2018/07/containers-vs-virtual-machines.jpg">
+  
+
+  ```
+    VM - Win DHCP
+    VM - DNS
+    VM - Win DB
+    VM - Linux Web
+    Workstation 16
+    Window 11 OS
+  ```
+- (Download VMWare Workstation](https://www.vmware.com/au/products/workstation-pro/workstation-pro-evaluation.html)
+- Create a new VM
+  - New VM Wizard
+  - Typical (recommended) -> Next -> Next
+  - Install from 
+    - Installer disc:
+    - Installer disc image file (iso) - RHEL7.0\rhel-server-7.0-x86
+    - **I will install the OS later** - choose this option
+  - Select a Guest Operating System
+    - Linux 
+    - [Red Hat Enterprise Linux 64 bit](https://developers.redhat.com/products/rhel/download) -> Next -> Next 
+  - Give VM name
+  - Specify Disk Capacity 
+    - Maximum disk size - add 80GB
+  - Options
+    - Store virtual disk as a single file 
+    - Split virtual disk into multiple files (if you provide 520GB or something)
+  - Customise Hardware
+    - Memory 4GB
+    - Processors -> Number of core processor => 2
+      - speed of processor , cycle per second
+    - New CD/DVD -> select the file 
+    - Network Adapter - NAT (wifi)  
+      - If you use wifi - use Bridged: Connected direclty to the physical network
+      - NAT (for landline)
+      - Remove printer driver 
+    - network time protocol 
+      - rhel-pool.ntp.org and switch on Network Time. It will ensure to synchronise among machines. But for personal laptop, you do not need to turn on 
+  - 
 </details>
 
 ---
@@ -355,6 +435,10 @@ Table of Contents
     - read, write, execute
   - killing jobs
 
+</details>
+
+---
+
 ## **Part 3: Admin commands**
 
 -
@@ -362,3 +446,5 @@ Table of Contents
 ## **Part 4: Shell scripting**
 
 ## **Part 5: Project**
+
+
