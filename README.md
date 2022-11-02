@@ -254,6 +254,31 @@ Table of Contents
     - /sbin contains root user executable commands (super user)
     - /usr - program files - install packges in this directory 
     - /op - is optional for usr , third parties software e.g. Ansible 
+    - /proc - contains background running processes (similar to Task manager in Window)
+      - `cat /proc/cpuinfo`
+      - `cat /proc/meminfo`, Ram, swap is the virtual ram, If physical ram is full, swap will provide support 
+    - /var/log - contains variable data 
+      - contains log directory - we have log
+    - /run - contains non-persistance real time data, running services, media, etc.. If you switch off the machine, you will loose those data
+  - Difference between /dev and /run/media
+  - /mnt - empty directory. To create a mount point for any partition
+  - /lib - contains library files and sharable objects 
+  - /temp - contains temporary files 
+
+  - Symbolic links (short cut) - You can access resources quicker.
+    - /bin -> /usr/bin
+    - /sbin -> /usr/sbin
+    - /lib -> /usr/lib 
+    - /lib64 -> /usr/lib64
+
+    ```
+    cd /
+    ls -l 
+      you will see all the directories and soft symbolic links
+    ```
+
+
+
   - **Three Types of files**
     - Regular file
       - It contains data
@@ -268,6 +293,7 @@ Table of Contents
       - Device drivers `cd /dev/`
       - all device drivers starts with c `ls -l`, link file `l`
       - <img src="./img/drivers.png">
+      - 
 
 - **Linux Architecture**
   - <img src="https://www.tutorialspoint.com/operating_system/images/linux_architecture.jpg">
@@ -318,11 +344,14 @@ Table of Contents
     - RHEL (Bash) Shell -> SH, KSH, CSH
     - Kernel will provide the result from ALU to the monitor .
 
+</details>
+
 
 ---
 
+
 <details>
-  <summary>Day 6</summary>
+  <summary>Day 6 :Virtualisation and File System Diagrams</summary>
 
 - Virtualisation 
   - Gmail account creation 
@@ -376,7 +405,26 @@ Table of Contents
       - Remove printer driver 
     - network time protocol 
       - rhel-pool.ntp.org and switch on Network Time. It will ensure to synchronise among machines. But for personal laptop, you do not need to turn on 
-  - 
+- File Structure continued
+  -    **Revise above concepts this weekend - 5 & 6 Nov**
+  
+  - <img src="https://linuxconfig.org/wp-content/uploads/2013/03/Directory-Filesystem-Hierarchy-Standard.jpg">
+
+  - <img src="https://www.linuxfoundation.org/hs-fs/hubfs/Imported_Blog_Media/standard-unix-filesystem-hierarchy-1.png?width=1817&height=1001&name=standard-unix-filesystem-hierarchy-1.png">
+
+  - username@hostname(machine name):~$
+    - ~ represents current home directory 
+    - pwd -> /home/su
+    - $ indicates that the user is normal user 
+  - How to switch users 
+    - Because of multi-user, multitasking concepts, you can switch 
+    - root@localhost:~$
+    - /home/root
+  - `su - root` and enter password  and then exit. You will get back to your normal user
+  - Absolute vs relative paths 
+    - absolute path - full path 
+    - relative path - short path 
+  
 </details>
 
 ---
@@ -435,16 +483,19 @@ Table of Contents
     - read, write, execute
   - killing jobs
 
-</details>
 
 ---
 
 ## **Part 3: Admin commands**
 
--
+---
 
 ## **Part 4: Shell scripting**
 
+---
+
 ## **Part 5: Project**
+
+---
 
 
