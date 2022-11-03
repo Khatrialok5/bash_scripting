@@ -430,7 +430,57 @@ Table of Contents
 ---
 
 <details>
-  <summary>Day 7</summary>
+  <summary>Day 7 : Continued Basic commands </summary>
+
+- `command option argument`
+  - option will adjust the behaviour of command
+  - argument - command output we want to print
+- `cal` : current month calendar
+- `cal -y `
+- `cal --help`
+- Predefined variables are in CAPITAL LETTERS
+- single - for unix, -- for GNU therefore
+- Linux variables types 
+  - Environmental variables 
+  - User defined variables
+- `echo $HOME` - print directory of the current user
+- `pwd vs echo $HOME` : what is the difference even though we get the same output?
+  - You call someone , ask where she/he is at 06:00am. Answer: Home
+  - You call the same person at 09:00. Answer: Office. **It is pwd.**
+  - $HOME is always home address regardless of which directory you are at.  
+- `echo $0 or echo $SHELL` - what shell we use?
+- `echo $BASH_VERSION` - shell version
+- `NAME=yourname` and `echo $NAME`
+- `env` : find out how many predefined are variables are in the system
+- `N$=1` : command not found
+- `uname -a`: check kernel version, gives detailed version
+- `uname -r` : print only kernel version
+- `tty` : terminal numbers 
+- `id username` : to find out the identification of the user, whether there is a user or not
+- `whoami` - will give you the current login user name. If username is not provided, it will give you root
+- `clear or ctrl + l`
+- `date` : will print system date and time 
+- `date +%D`
+- `date +%b`
+- `date +%B`
+- `date +%H`
+- `date -s "yyyy-mm-dd hh:mm:ss"` : Change system date 
+- Select + Shift + Insert - to copy and paste
+- `timedatectl` - new command since RHEL 7 version 
+  - RTC - real time clock - system BIOS time 
+  - NTP - there is no NTP server , therefore, it is not active 
+- `timedatectl list-timezones` and q for quit 
+- `timedatectl set-timezone "AFrica/Juba"` - you have to be as root user 
+- single tab -> all time related commands
+- double tabs -> it will give the entire command
+- `timedatectl set-ntp true`
+- `cat` : concatenation of files, concatenate  files and print on the standard output
+  - `cat > file.txt` and add your text and save by `ctrl + D`
+  - `cat < file.txt or cat file.txt` : print the file content 
+  - `cat file1.txt file2.txt > outputfile.txt`
+
+- <img src="https://i.redd.it/rl0fe7r6zku11.jpg">
+- <img src="https://i.redd.it/5fmqo3b0i1j31.png">, from (this link)[https://www.reddit.com/r/linux/comments/cw922a/this_is_my_personal_linux_commands_cheat_sheet/]
 </details>
 
 ---
