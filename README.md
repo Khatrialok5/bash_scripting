@@ -486,7 +486,30 @@ Table of Contents
 ---
 
 <details>
-  <summary>Day 8</summary>
+  <summary>Day 8 : Touch, mkdir, tree, cd, cp, mv , rm commands</summary>
+
+- touch
+  - `touch file1 file2`: 
+  - `touch file{1..3}`: create multiple files - regex 
+  - `touch -d "yyyy-mm-dd HH:MM:SS" file1` : change timestamp
+    - **Why we need to change date and time for files?** 
+      - [Check ](https://phoenixnap.com/kb/touch-command-in-linux)
+  - `mkdir country{1..5}` : create directories - country1 to country5
+  - `mkdir -p Parent/ChildFolder/GrandChild` : -p is parent
+  - `ls -R Parent/` : how many directories are in this folder
+    - R is recursive 
+  - `mkdir -p NIT/{Linux/{Ubuntu, RHEL}, Microsoft/{Developer, SolutionArchitect}, DevOps/{Dockers,Kubernetes}}` : Multiple tree structure 
+  - `tree Foldername` : will show youu tree directory
+  - `cd FolderDestination` : change between directories 
+  - `cp` : copies
+  - `ls -al DirectoryName` : 
+  - `cp -rvf dir1 dir2` : 
+    - 
+  - `mv File1Source File2Destination` : rename
+  - `rm -r ls directory` : 
+  - `rm file*` : everyfile that starts with file will be deleted. 
+
+
 </details>
 
 ---
