@@ -1,16 +1,5 @@
 # Unix & Linux course
 
-Table of Contents
-
-```
-  Part 1: Basics
-  Part 2: User level commands
-  Part 3: Admin commands
-  Part 4: Shell scripting
-  Part 5: Project
-```
-
-## **Part 1: Basics**
 
 <details>
   <summary>Day 1 & 2: Intro to OS</summary>
@@ -509,13 +498,67 @@ Table of Contents
   - `rm -r ls directory` : 
   - `rm file*` : everyfile that starts with file will be deleted. 
 
-
 </details>
 
 ---
 
 <details>
-  <summary>Day 9</summary>
+  <summary>Day 9: File Types , Soft & hard links, ls and its options </summary>
+
+- File Types
+  - dirs directory
+  - c character files e.g. Keyboard, mouse, etc. 
+  - block file e.g. Hard disk hdd, pendrive, dvd - inside dev directory 
+  - l link files
+    - soft link : shortcuts - access resources quicker 
+    - hard link : it is a backup file, copy 
+  - <img src="https://geek-university.com/wp-content/images/linux/file_type_codes_table.jpg" width=300>
+  - <img src="https://miro.medium.com/max/561/1*57A1BlxKRE3JmDSjCFx0oQ.png" width=300>
+- `ls -l | grep ^l` : filter link files
+- `file File2` - Check the file type
+- `cat > soft` write something. To save `ctrl + D`
+- `ln -s /home/su/soft sl` : s is option
+- `cat >> sl` : change the text 
+- `cat /home/su/Desktop/sweden`
+- `du -h` : disk usage human readable format 
+- `ls -i /home/su/Desktop/soft` : inode properties
+- `rm -rf`
+- `cat > hard `
+- `cat hard`
+- `cd Desktop`
+- `pwd`
+- `ln /home/su/hard h1`
+- `cat >> h1`
+- `cat /home/su/hard`
+- `du -h h1`
+- `ls -i hl`
+- `ls -i /home/su/hard`
+- `cat hl`
+  - <img src="https://trendoceans.com/wp-content/uploads/2021/12/Frame-4-1-compressed-1024x576.jpg">
+- **ls command syntax**
+  - `ls -l`
+  - `ls -l F*` : fileter starting F 
+  - `ls -l *1`
+  - `ls -l [FL]*` List all the files with FL*
+  - `ls -l [FKc]*`
+  - `ls -ld dir*` : list all directories
+  - `ls -ld d*`
+  - `ls -al`: filter hidden files all files including hidden files
+  - `ls -al`: Create hidden file, add . , 
+  - `mkdir .dirExample`
+  - `touch bat cat fat hat mat rat`
+    - `ls -l *[at]`
+    - `ls -l ?at`
+    - What is the difference between * and ? ? Arguments are different.
+      - * : wild card
+      - ? : will consider only one character from the file name
+  - `ls -l F?`
+  - `ls -l F*`
+  - `ls -l ????` : four questions marks ???? it will print all four characters files will be printed.
+  - `ls -l [a-c]*`
+  - `ls -ltr` : reverse file - sort the file as per descending time order. Current file will be displayed first
+
+
 </details>
 
 ---
@@ -537,38 +580,4 @@ Table of Contents
 </details>
 
 ---
-
-## **Part 2: User level commands**
-
-- Contents
-  - whoami, who, last, man
-  - date, cal, ls and its options
-  - working with directories
-  - absolute path vs relative path
-  - working with files
-  - hard links vs softlink files
-  - editors : gedit, vi, vim, nano
-  - pattern matching chars, \*, ?, [], {}
-  - filters like pipe, head, tail, tr, tee
-  - grep command
-  - tar
-  - Permission (security)
-    - read, write, execute
-  - killing jobs
-
-
----
-
-## **Part 3: Admin commands**
-
----
-
-## **Part 4: Shell scripting**
-
----
-
-## **Part 5: Project**
-
----
-
 
