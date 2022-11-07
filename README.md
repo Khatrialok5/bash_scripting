@@ -564,13 +564,78 @@
 ---
 
 <details>
-  <summary>Day 10</summary>
+  <summary>Day 10 : Create/edit file with CUI vs GUI, why you should choose CUI</summary>
+
+- `gedit or vim filename` : `esp`
+- `vi vs vim`
+  - visual display editor
+  - visual display editor improved 
+- `tty` - terminal number 
+- `vi /etc/passwd`
+  - switch command mode to insert mode - i 
+  - visual mode - v-key 
+  - `wq` save and quit
+  - save changes - extended command :wq save and quit 
+  - gg start
+  - G end of the file 
+  - nw - word by word curser forward
+  - nb - word by word curser back
+  - ndd - to cut the line, p to paste
+  - u - undo the link, ctrl + r redo
+  - nyy - to copy line
+  - :q - to quite
+  - :w - to save
+  - :x - to save and quit 
+  - A - start
+  - a - next letter insert mode
+  - Add empty line below the curser 
+  - - `:x` - save and quit 
+- `w` - just save, don't quit
+- `vim /etc/sudoers` - 
+- `vim `
+- `/searchword`
+- `s/Linux/Windows`
+- `:%s/Linux/Windows` - replace all 
+- `:8` - 8th line, `:9` - 9th line
+- `:X` - to assign the encrypted password, to remove the password, `:X` - do not enter anything
+- `vim -o file1 file2` - how to open multiple files
+- `vimtutor` - all the commands 
+- <img src="https://preview.redd.it/h2cyb9odjeg61.png?width=1958&format=png&auto=webp&s=d8fd8d9f87290298fa66fcc756dbd6c0d2dbab91">
+- <img src="http://www.cefns.nau.edu/~pek7/CS200/vi-vim-cheat-sheet-dvorak.gif">
+- <img src="https://pbs.twimg.com/media/B_XQ9k7UYAEUmtY.png">
+
+
+
 </details>
 
 ---
 
 <details>
   <summary>Day 11</summary>
+
+- man
+- redirect
+- user management concept 
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+
 </details>
 
 ---
