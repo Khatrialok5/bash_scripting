@@ -604,37 +604,57 @@
 - <img src="http://www.cefns.nau.edu/~pek7/CS200/vi-vim-cheat-sheet-dvorak.gif">
 - <img src="https://pbs.twimg.com/media/B_XQ9k7UYAEUmtY.png">
 
-
-
 </details>
 
 ---
 
 <details>
-  <summary>Day 11</summary>
+  <summary>Day 11 : Filter using grep,less, more, head, tail, sort , sed (basic), find , wc </summary>
 
-- man
-- redirect
-- user management concept 
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
+- `grep` - glocal regular expression print  to find out words from the files
+- `cat /etc/passwd` - contains config files - find out a few words
+- `grep -n root /etc/passwd` :print all the words called root, -n is line number
+- `grep -v root /etc/passwd` : exclude root word 
+- `grep Hello file1` : print out word matches 
+- `grep -i hello Hello file1` : -i print both capital and small letter
+- `grep -nB4 wheel /etc/group` - n number of lines , B is before , 4 is number
+- `grep -e 'root | su' /etc/passwd` - syntax incorrect... -Filter multiple words 
+- `ls -l | grep ^b` filter file from directory , lock files
+  - piping, execute multiple combination
+  - ^ means first letter 
+- `ls -l | grep t$` - end letter is t and use $
+- `ls -l | grep su` - filter only files with name
+- `less /etc/passwd` : how to print contents 
+  - b - previous page
+  - d - next page
+  - v - to edit the content
+  - / - to search 
+- `less` : 
+- `more ` : 
+- `head` : first 10 lines
+- `head -4 /etc/passwd`
+- `tail `
+- `cat > file1` : create a file , cat > file2 adsfadfasfadgagouoiwuoibn
+- `sort file1 ` : sort in alphabetical order 
+- `sort -r file1` - in process management, you need to use sort command.
+  - duplicates alphabets
+- `sort -u file1`
+- `sed` - steam editor 
+  - find and replace 
+  - Practice sed related example 
+- `sed 's/existingword/newword/1' file1` : 1 means first word, 2 means 2nd words, every word repalcement means g
+- `sed 's/Linux/Sweden/g' file1 > file2` : redirect the changes into new file2
+- `find / -name file1` : / means entire OS
+- `ls -i` - inode number
+- `find / -inum 12344555`
+- `wc /etc/passwd`
+  - `wc -l /etc/passwd`
+  - `wc -c /etc/passwd`
+- `find / -type b`
+- `find / -size`
+- `find / -size -10k`
+- `find / -group su`
+
 
 </details>
 
@@ -642,6 +662,9 @@
 
 <details>
   <summary>Day 12</summary>
+
+- man
+- redirect 
 </details>
 
 ---
