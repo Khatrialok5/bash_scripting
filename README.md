@@ -609,7 +609,7 @@
 ---
 
 <details>
-  <summary>Day 11 : Filter using grep,less, more, head, tail, sort , sed (basic), find , wc </summary>
+  <summary>Day 11 : Filter using grep,less, more, head, tail, sort , sed (basic), find , wc  </summary>
 
 - `grep` - glocal regular expression print  to find out words from the files
 - `cat /etc/passwd` - contains config files - find out a few words
