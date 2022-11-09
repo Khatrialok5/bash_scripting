@@ -661,10 +661,51 @@
 ---
 
 <details>
-  <summary>Day 12</summary>
-
-- man
-- redirect 
+  <summary>Day 12: man, redirect </summary>
+- manual page for each command/resrouce 
+- `man man`:
+  - <img src="https://pbs.twimg.com/media/EzNUFVFVcAMsRDY.jpg" >
+  
+- `man -k xfs` : you get all xfs related
+  - section 8: root user executable command 
+- `mandb` : manual database, add newer manual page
+- `man 8 xfs_growfs`
+- Why should you use session id? Because few commands have similar names, therefore, provide correct session id.
+  - password file vs password details
+- `man -k passwd`
+- `man 1 passwd`
+- `man 5 passwd`
+- `man -t passwd > test.ps`
+- `cat test.ps`
+- `evince test.ps` : evine is a PDF reader, GNOME document viewer
+- `file test.ps`: check for file type
+- `ls test.ps -P 2-4`: P is print
+- `man -k tar`
+- File Descriptors (Number channel)- Manage open files 
+  - <img src="https://miro.medium.com/max/1194/1*KKgbrtuGtfUJLuFERWTMow.png">
+  - A file descriptor is a number that uniquely identifies an open file in a computer's operating system. It describes a data resource, and how that resource may be accessed
+  - <img src="https://www.computerhope.com/jargon/f/file-descriptor.jpg">
+  - To manage open files 0-> n
+  - Inside the Kernel, there is descriptor table.
+    - 0 : stdin < input e.g. keyboard with this, we provide input
+    - 1 : stdout > output e.g. monitor
+    - 2 : stderr 2> e.g. monitor 
+    - 3 : from here onwards, they are reserved for open files
+      - File HelloWorld - Number 3 will manage the file until you opens
+      - The descriptor number will be removed from the table. If you opens a new file, 3 will be assigned again to the newly opened file. Therefore , descriptor number is not fixed to the file. [Read this](http://web.eecs.utk.edu/~jplank/plank/classes/cs360/360/notes/Dup/lecture.html)
+  - <img src="https://bottomupcs.com/chapter00/figures/file-descriptors.svg">
+  - Operator : Input pre, output , error redirector
+    - > >> append 
+- `ls -l > /home/su/Desktop/test1.txt`
+- `ls -al >> /home/su/Desktop/test1.txt`: append
+- `ln -l 2>/ho/ho`: redirect 
+- `find / -name  file 2>> /home/su/Desktop/file2`
+- `find / -name file1 2>>` one file output, one file for error 
+- `find / -type b 2> /dev/null`
+- `find / -type b &> /home/su/Desktop/errorAndOutput.txt`: error and output to the same file
+- `find / -type c &>> /home/su/Desktop/errorAndOutput.txt` : append
+- Downtown (idle time) - search for log files- from what time
+  - inside, var -> there will be log files.
 </details>
 
 ---
