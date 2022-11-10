@@ -710,3 +710,70 @@
 
 ---
 
+<details>
+  <summary>Day 13: User and Group Management </summary>
+
+- #usermod -> to modify a user
+- #userdel -> delete a user
+- #passwd -> assign a password for user
+```
+  All the properties can be obtained from /etc/passwd . contains local user properties
+  /etc password contains local user properties
+  /etc/shadow contains password properties of local user.
+  
+  Username      passwd    uid                 gid       comments    home-dir        shell
+  root            x       0                   0         root        /root           /bin/bash
+  system user
+  -----------
+  apache          x       1-499 in RHEL6.0    1-499     apache       /var/www/html  /sbin/nologin (non interactive shell)  
+                          1-999 in RHEL7,8    1-999
+  ftp             x       1-499 in RHEL6.0    1-499     ftp           /var/ftp/pub  /sbin/nologin   
+  
+  normal user
+  -------------
+  student
+  u1              x       500-60000 in RHEL7,8          u1            /home/u1   /bin/bash (if you do not have bashshell, you cannot login)
+                          1000-60000 in RHEL6.0 
+  u2
+  u3
+  Modifying
+                                                                      -d while creating new user
+                                                                      - m for existing user
+  -l                      -u                  -g        -c            -d, -m                -s
+  -L : lock the user
+  -U : to unlock the user
+```
+- How Laptop A shares data with Laptop B through network using shared folder
+  - create a user account 
+- `usermode -l` : to rename the user with user mode 
+- [login as root user](https://www.cyberciti.biz/faq/become-superuser-on-ubuntu-linux/#:~:text=Press%20Ctrl%20%2B%20Alt%20%2B%20T%20to%20open%20the%20terminal%20on%20Ubuntu.&text=When%20promoted%20provide%20your%20own,logged%20as%20the%20root%20user.)
+  - whoami
+  - sudo -i
+  - enter password
+- `less /etc/passwd`
+- `useradd u1`, `id u1`
+- `tail /etc/passwd`
+- `useradd u2 -u 2002 -g`
+- `useradd u2 -u 2002 -c HR -d /home/dir -s /sbin/nologin`
+- `su - u2`
+- `usermod -s /bin/bash u2`
+ - `usermod -m -d/hom`
+ - `usermod -l test-user u2`
+ - `user -m /home/tuser`
+ - `userdel -r test-user`
+ - `useradd u2 -u 2002 -c HR -d /home/dir -s /sbin/nologin`
+ - `tail /etc/passwd`
+ - [User management commands](https://www.redhat.com/sysadmin/linux-commands-manage-users)
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
