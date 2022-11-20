@@ -766,14 +766,105 @@
  - [User management commands](https://www.redhat.com/sysadmin/linux-commands-manage-users)
 </details>
 
+<details>
+  <summary>Revision till Day 13 </summary>
 
+- Linux File System
 
+```
+  whoami
+  / is the root.
+  ctrl + l == clear
+  bin => binaries => command binaries 
+  cat ls => concate 
+  sudo cp ls sutest 
+  sbin super bin => 
+  adduser
+  usr => usr/bin, usr/sbin
+    - when we use ls , where are we using it from?
+  which => where your binary commands live
+    e.g. which ls , which 
+  boot => boot files
+  var => log information related files
+  tmp => temporary files
+  lib => more shared library files , things that your system need to boot
+  sudo -i => log in as root user
+  exit/logout => to exit from root user
+  dev => devices (printer, etc.)
+  sda => virtual disks
+  sda1 
 
+```
+- **Session -9 Revised** 
 
+  - etc (etsy) files => network, config files 
+  - media => mount drive
+  - mnt => you use commands to mount 
+  - gedit, gvim => edit
+  - vi => visual displayed editor
+  - vim => visual displayed editor improved 
+  - tty => terminal number (better to log in as a root user)
+  - vim /etc/passwd
+  - When you open the file, you are in command mode. You cannot edit the file content.
+  - switch mode from command mode to insert mode , use i key , if you want to get out from insert mode, use esc key.
+  - v key => visual mode, read mode, navigate the file content, to get out, use v again.
+  - Extended command mode - : wq
+  - :q! force quit without saving 
+  - **Common mode to insert**
+    - i insert
+    - A - end of line insert mode
+    - a - next letter insert mode
+    - I - starting of the line insert mode
+    - o - adding line below the cursor
+    - O - adding line above the cursor
 
+  - **Extended command mode**
+    - :w - save
+    - :q - quit
+    - :x - save and quit
+    - / - search the word
+    - s/Linux/Windows -> replace only one word
+      - existing new
+    - %s/Linux/Windows -> replace all words
+    - :se nu - serial number
+  - **Command mode options**
+    - gg - start of the page
+    - G - end of the page
+    - 6w - word by word cursor forward
+    - 5b - word by word cursor back
+    - ndd - to cut the line, p to paste
+    - u - undo the line
+    - ctrl + r - redo
+    - nyy - to copy the line
+    - w - 4w, 6w, numbers of words after the current word6b
+    - x - delete letter by letter
+    - u - undo letter by letter
+    - 58
 
+---
 
+<details>
+  <summary>Day 14 : TB Added </summary>
 
+- s
+- s
 
+</details>
 
+---
 
+<summary>Day 15 : login.defs </summary>
+
+- s
+- s
+
+</details>
+
+---
+
+<summary>Day 16 :  </summary>
+
+- s
+- s
+
+</details>
